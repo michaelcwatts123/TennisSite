@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
 
 <head>
+  <title>Automotive App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -13,112 +15,193 @@
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-  <link rel="stylesheet" href="styles.css">
+  </script> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
 </head>
 
+
 <body>
+<div id="page-container">
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+      <!-- Nav Bar Items On Left -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link active" onclick="openTab(event, 'AllAboutBruce')" id="defaultOpen" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="openTab(event, 'Services')" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " onclick="openTab(event, 'Schedule')" href="#">Schedule & Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " onclick="openTab(event, 'faq')" href="#">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="openTab(event, 'mAt')" href="#">Media & Testimonials</a>
+        </li>
+      </ul>
+    </div>
 
-  <h2>Bruce Stefan Tennis</h2>
+    <!-- Room for Logo in Middle -->
+    <div class="mx-auto order-0">
+      <a class="navbar-brand mx-auto" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
 
-  <div class="tab">
+    <!-- Nav Bar Items on Right -->
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+      </ul>
+      <a class="navbar-brand mx-auto" href="#">Bruce Stefan Tennis</a>
+    </div>
+  </nav>
+  <!-- End Nav Bar -->
+
+  <!-- Second Nav Bar Option -->
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand " href="#">Bruce Stefan Tennis</a>
+    <ul class="navbar-nav mr-auto ">
+      <li class="nav-item">
+        <a class="nav-link " href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#">Schedule & Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#">FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Media & Testimonials</a>
+      </li>
+    </ul>
+  </nav> -->
+  <!-- End 2nd Nav Bar -->
+
+  <!-- Old Vertical Nav Bar -->
+  <!-- <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'AllAboutBruce')" id="defaultOpen">About</button>
     <button class="tablinks" onclick="openCity(event, 'Services')">Services</button>
     <button class="tablinks" onclick="openCity(event, 'Tokyo')">Schedule/Sign Up</button>
     <button class="tablinks" onclick="openCity(event, 'faq')">FAQ</button>
     <button class="tablinks" onclick="openCity(event, 'mAt')">Media and Testimonials</button>
-  </div>
-
+  </div> -->
+<div id="content-wrap">
+  <!-- All About Bruce Tab -->
   <div id="AllAboutBruce" class="tabcontent">
-  <h3>Bruce Stefan</h3>
-  <div>
+    <h3>Bruce Stefan</h3>
+    <div>
       <img src="https://mytennislessons.imgix.net/uploads/instructor/picture/6541/Watch_the_Ball.jpg?auto=format%2Cenhance%2Credeye&dpr=2.63&ixjsv=1.1.2&q=38&w=150" style="width:15%; height:50%; display:inline-block" align="left">
-  </div>
-  <div>
+    </div>
+    <div>
       <img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/37734972_10155485368836875_5912368644423155712_n.jpg?_nc_cat=106&_nc_ht=scontent-dfw5-2.xx&oh=3840e8ca3ada791dc45989bae5850902&oe=5D45C827" style="width:20%; display:inline-block" align="right">
+    </div>
+    <div style="width:65%; display:inline-block" align="middle">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
   </div>
-  <div style="width:65%; display:inline-block" align="middle">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </div>
-</div>
-<div id="Services" class="tabcontent">
-  <h3>Services Offered</h3>
-  <p>From Fundamentals to Expert Strategies...</p>
-  <div class="card">
-    <div class="card-header lead">Beginner Fundamentals</div>
-    <ul class= "list-group list-group-flush">
+  <!-- End Bruce Tab -->
+
+  <!-- Services Tab -->
+  <div id="Services" class="tabcontent">
+    <h3>Services Offered</h3>
+    <p>From Fundamentals to Expert Strategies...</p>
+    <div class="card">
+      <div class="card-header lead">Beginner Fundamentals</div>
+      <ul class="list-group list-group-flush">
         <li class="list-group-item">Grips</li>
         <li class="list-group-item">Forehand</li>
         <li class="list-group-item">Backhand</li>
         <li class="list-group-item">Volleys</li>
         <li class="list-group-item">Serves</li>
         <li class="list-group-item">Overheads</li>
-    </ul>
-  </div>
-  <div class="card">
-    <div class="card-header lead">Drills and Training</div>
-    <ul class= "list-group list-group-flush">
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-header lead">Drills and Training</div>
+      <ul class="list-group list-group-flush">
         <li class="list-group-item">TCD, USTA, Metro team drills</li>
         <li class="list-group-item">Team Doubles Strategies</li>
         <li class="list-group-item">General Coaching </li>
-    </ul>
-  </div>
-  <div class="card">
-    <div class="card-header lead">Special Events</div>
-    <ul class= "list-group list-group-flush">
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-header lead">Special Events</div>
+      <ul class="list-group list-group-flush">
         <li class="list-group-item">Birthdays</li>
         <li class="list-group-item">Anniversaries</li>
         <li class="list-group-item">Corporate Events </li>
         <li class="list-group-item">Tennis Potlucks</li>
-    </ul>
+      </ul>
+    </div>
   </div>
+  <!-- End Services Tab -->
 
-</div>
-
-  <div id="Tokyo" class="tabcontent">
+  <!-- Schedule and Sign Up Tab -->
+  <div id="Schedule" class="tabcontent">
     <h3>Schedule/Sign-Up</h3>
-    <p>Tokyo is the capital of Japan.</p>
+    <p>Schedule stuff here</p>
   </div>
+  <!-- End Schedule Tab -->
 
 
+  <!-- FAQ Tab -->
   <div id="faq" class="tabcontent">
     <h1>FAQ</h1>
     <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="row">
-              <div class="col">
-                <h2>Question</h2>
-              </div>
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <div class="col">
+              <h2>Question</h2>
             </div>
-            <div class="row">
-              <div class="col">
-                <p>Answer and stuff</p>
-              </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p>Answer and stuff</p>
             </div>
           </div>
         </div>
-        <div class="row">
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="row">
             <div class="col">
-              <div class="row">
-                <div class="col">
-                  <h2>Another One</h2>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <p>Answer and stuff</p>
-                </div>
-              </div>
+              <h2>Another One</h2>
             </div>
           </div>
+          <div class="row">
+            <div class="col">
+              <p>Answer and stuff</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  <!-- End FAQ Tab -->
 
-
-
-
+  <!-- Media and Testimonials Tab -->
   <div id="mAt" class="tabcontent">
     <h3>Media and Testimonials</h3>
     <h2>Automatic Slideshow</h2>
@@ -228,8 +311,13 @@
       </div>
     </div>
   </div>
+  <!-- End MAT Tab -->
+</div>
 
-  <img src="PTR_logo.png" alt="Professional Tennis Registry Logo">
+  <!-- Footer -->
+  <footer class="section footer-classic context-dark bg-image" id="footer">
+        <img src="PTR_logo.png" alt="Professional Tennis Registry Logo">
+</footer>
 
   <script>
     var slideIndex = 0;
@@ -254,23 +342,24 @@
       setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
 
-    function openCity(evt, cityName) {
+    function openTab(evt, tabName) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
       }
-      tablinks = document.getElementsByClassName("tablinks");
+      tablinks = document.getElementsByClassName("nav-link active");
       for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
       }
-      document.getElementById(cityName).style.display = "block";
+      document.getElementById(tabName).style.display = "block";
       evt.currentTarget.className += " active";
     }
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
   </script>
 
+</div>
 </body>
 
 </html>
