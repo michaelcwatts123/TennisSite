@@ -1,14 +1,28 @@
 * {box-sizing: border-box}
 body {font-family: "Lato", sans-serif;}
+/*Center page content*/
+.centerized{
+  padding-left: 15em;
+}
 
 .navbar,
 footer {
     background-color: #FFF936;
+    text-align: center;
 }
 
 .nav-item.active{
     color: #36FFF9;
 }
+/* Styles for the tile of the site*/
+.title{
+  background-color: #FFF936;
+  text-align: center;
+  font-size: 5em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 
 /* Style the tab */
 .tab {
@@ -127,6 +141,13 @@ img {vertical-align: middle;}
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+}
+#mAt_Parent{
+  text-align: center;
+  padding-left: 10 em;
+}
+#mAt {
+  display: inline-block;
 }
 
 @-webkit-keyframes fade {
