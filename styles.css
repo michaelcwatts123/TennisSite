@@ -7,7 +7,7 @@ body {font-family: "Lato", sans-serif;}
 
 .navbar,
 footer {
-    background-color: rgb(78, 255, 54);
+    background-color: rgb(39, 168, 27);
     text-align: center;
 }
 
@@ -16,7 +16,7 @@ footer {
 }
 /* Styles for the tile of the site*/
 .title{
-  background-color: rgb(78, 255, 54);
+  background-color: rgb(39, 168, 27);
   text-align: center;
   font-size: 5em;
   padding-bottom: 0;
