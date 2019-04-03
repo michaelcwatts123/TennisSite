@@ -2,7 +2,8 @@
 body {font-family: "Lato", sans-serif;}
 /*Center page content*/
 .centerized{
-  padding-left: 15em;
+  padding-left: 5em;
+  padding-right: 5em;
 }
 
 .badge-pill.active {
@@ -143,6 +144,7 @@ img {vertical-align: middle;}
 #mAt {
   display: inline-block;
 }
+
 
 @-webkit-keyframes fade {
   from {opacity: .4} 
