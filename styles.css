@@ -26,6 +26,23 @@ a.badge-pill {
     font-size: 1em;
 }
 
+ul > li > ul {
+  padding: 0em;
+}
+
+ul > li > ul li {
+  padding: 0em;
+}
+
+#Services{
+  text-align: center;
+}
+
+.services-inline{
+    display: inline-block;
+    text-align: left;
+}
+
 .mr-auto {
     margin: 0.2em;
 }
