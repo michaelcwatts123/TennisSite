@@ -45,7 +45,9 @@ footer {
     background-color: rgb(39, 168, 27);
     text-align: center;
 }
-
+.bg-green{
+  background-color: rgb(39, 168, 27);
+}
 /* Styles for the tile of the site*/
 .title{
   background-color: rgb(39, 168, 27);
@@ -147,12 +149,12 @@ img {vertical-align: middle;}
 
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
