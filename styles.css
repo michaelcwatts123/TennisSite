@@ -1,13 +1,60 @@
 * {box-sizing: border-box}
 body {font-family: "Lato", sans-serif;}
+/*Center page content*/
+.centerized{
+  padding-left: 5em;
+  padding-right: 5em;
+}
 
-/* Style the tab */
-.tab {
-  float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  width: 30%;
-  height: 300px;
+.badge-pill.active {
+    background-color: white;
+    color: black;
+}
+
+a.badge-pill:hover {
+    color: white;
+}
+
+a.badge-pill.active:hover {
+    color: rgb(22, 173, 233);
+}
+
+a.badge-pill {
+    color: black;
+    padding: 0.2em;
+    margin: 0.2em 0.4em 0.2em;
+    font-size: 1em;
+}
+
+.mr-auto {
+    margin: 0.2em;
+}
+
+.card-header {
+    cursor: pointer;
+    background-color: rgb(39, 168, 27);
+    color: white;
+}
+
+div#Services div{
+    width: 53rem;
+}
+
+.navbar,
+footer {
+    background-color: rgb(39, 168, 27);
+    text-align: center;
+}
+.bg-green{
+  background-color: rgb(39, 168, 27);
+}
+/* Styles for the tile of the site*/
+.title{
+  background-color: rgb(39, 168, 27);
+  text-align: center;
+  font-size: 5em;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* Style the buttons inside the tab */
@@ -25,25 +72,19 @@ body {font-family: "Lato", sans-serif;}
   font-size: 17px;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
+.card {
+    margin: 0.5em;
 }
 
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #ccc;
+#page-container {
+    position: relative;
+    min-height: 100vh;
 }
 
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid #ccc;
-  width: 70%;
-  border-left: none;
-  height: 300px;
+#content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
 }
+
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
@@ -98,14 +139,22 @@ img {vertical-align: middle;}
   animation-name: fade;
   animation-duration: 1.5s;
 }
+#mAt_Parent{
+  text-align: center;
+  padding-left: 10 em;
+}
+#mAt {
+  display: inline-block;
+}
+
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
