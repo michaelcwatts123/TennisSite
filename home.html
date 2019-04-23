@@ -75,32 +75,30 @@
       </div>
     </nav>
     <!-- End Nav Bar -->
-    <div class="pt-5">
+    <div class="centerized pt-5">
 
       <div id="content-wrap">
         <!-- All About Bruce Tab -->
         <div id="About" class="tabcontent">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-3 text-center">
-                <img class="rounded"src="https://mytennislessons.imgix.net/uploads/instructor/picture/6541/Watch_the_Ball.jpg?auto=format%2Cenhance%2Credeye&dpr=2.63&ixjsv=1.1.2&q=38&w=150" style="width: 16vw;"></img>
-                <img src="PTR_logo.png" style="width:16vw;"></img>
-                <p class="text-center">Professional Tennis Registry Certified Instructor</p>
-              </div>
-              <div class="col-9">
-                <h3>Bruce Stefan</h3>
-                <div style="width:85%; display:inline-block; font-size: 1.1em">
-                  <strong>Bruce Stefan Tennis</strong>
-                  For adults and kids of all levels who want to learn fundamentals, improve their game, and have fun doing it.
-                </div>
-                <div style="width:65%; display:inline-block; align=right; margin-top: 2em">
-                  <h1>Previous Experience</h1>
-                  <p style="font-size: 1.1em">Seay Center Highland Park High School: 4 years : Lessons, Drills, Junior Program</p>
-                  <p style="font-size: 1.1em">SMU : 3 years : Lessons, Drills, Juniors Program, Junior Summer Camps</p>
-                  <p style="font-size: 1.1em">Lakehill Prep: Volunteer coach for Middle and High school tennis</p>
-                  <p style="font-size: 1.1em">Developed a following of approximately 250 players for drills and lessons</p>
-                </div>
-              </div>
+          <h3 align="middle">Bruce Stefan</h3>
+          <div style="display: flex; height:16em">
+            <img src="https://mytennislessons.imgix.net/uploads/instructor/picture/6541/Watch_the_Ball.jpg?auto=format%2Cenhance%2Credeye&dpr=2.63&ixjsv=1.1.2&q=38&w=150" style="height: 100%; display:inline-block; padding-right: 4em"></img>
+            <div style="width:85%; display:inline-block; font-size: 1.1em">
+              <strong>Bruce Stefan Tennis</strong>
+              For adults and kids of all levels who want to learn fundamentals, improve their game, and have fun doing it.
+            </div>
+          </div>
+          <div style="display: flex">
+            <div style="width: 20%; height: 100%; display: inline-block; align=left; padding-right: 4em">
+              <img src="PTR_logo.png" style="height: 100%; width: 100%; display:inline-block; align=left; padding-right: 3em; padding-top: 2em"></img>
+              <p>Professional Tennis Registry Certified Instructor</p>
+            </div>
+            <div style="width:65%; display:inline-block; align=right; margin-top: 2em">
+              <h1>Previous Experience</h1>
+              <p style="font-size: 1.1em">Seay Center Highland Park High School: 4 years : Lessons, Drills, Junior Program</p>
+              <p style="font-size: 1.1em">SMU : 3 years : Lessons, Drills, Juniors Program, Junior Summer Camps</p>
+              <p style="font-size: 1.1em">Lakehill Prep: Volunteer coach for Middle and High school tennis</p>
+              <p style="font-size: 1.1em">Developed a following of approximately 250 players for drills and lessons</p>
             </div>
           </div>
         </div>
@@ -414,7 +412,6 @@
 <script>
   var slideIndex = 0;
   showSlides();
-
   function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");
@@ -433,7 +430,6 @@
     dots[slideIndex - 1].className += " active";
     setTimeout(showSlides, 2000); // Change image every 2 seconds
   }
-
   function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
