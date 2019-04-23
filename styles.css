@@ -10,7 +10,15 @@ body {font-family: "Lato", sans-serif;}
     background-color: white;
     color: black;
 }
-
+.img {
+  position: relative;
+  float: left;
+  width:  40em;
+  height: 30em;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+}
 a.badge-pill:hover {
     color: white;
 }
