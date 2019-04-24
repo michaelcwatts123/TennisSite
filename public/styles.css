@@ -61,9 +61,6 @@ ul > li > ul li {
     color: white;
 }
 
-div#Services div{
-    width: 53rem;
-}
 
 .navbar,
 footer {
@@ -77,7 +74,7 @@ footer {
 .title{
   background-color: rgb(39, 168, 27);
   text-align: center;
-  font-size: 5em;
+  font-size: 10vh;
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -114,13 +111,6 @@ footer {
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  width: 60vw;
-  display: block;
-  margin:auto;
-}
 
 /* Caption text */
 .text {
